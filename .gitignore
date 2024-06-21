@@ -1,52 +1,26 @@
-# Prerequisites
-*.d
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+/.vs/hilel-aqa/v17
+/.vs/hilel-aqa/FileContentIndex
+/.vs
+/AtataUITests/.vs/
+/AtataUITests/bin/Debug/net8.0
+/AtataUITests/obj
+/PlaywrigthUITests/.vs
+/PlaywrigthUITests/bin/Debug/net8.0
+/PlaywrigthUITests/obj
+/NUnitTests/.vs
+/NUnitTests/bin/Debug/net8.0
+/NUnitTests/obj
+/.idea
+/.vscode
+/HilelTests.sln
+/hilel-aqa-Lesson_2/AtataUITests/.vs/HilelTests
+/hilel-aqa-Lesson_2/AtataUITests/obj
+/hilel-aqa-Lesson_2/NUnitTests/obj
+/hilel-aqa-Lesson_2/PlaywrigthUITests/obj/Debug/net8.0
+/hilel-aqa-Lesson_2/PlaywrigthUITests/obj
+/AtataUITests2
+/PlayWrigthMyTest/obj
