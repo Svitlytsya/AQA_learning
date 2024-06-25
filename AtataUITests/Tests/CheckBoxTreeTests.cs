@@ -7,6 +7,7 @@ namespace AtataUITests.Tests
     internal class CheckBoxTreeTests : UITestFixture
     {
         [Test]
+        [Category("UI_DEMOQA")]
         public void VerifyCheckBoxTreeeHomeCheckboxVisible()
         {
             Go.To<DemoQACheckBoxPage>().
@@ -18,6 +19,7 @@ namespace AtataUITests.Tests
         }
 
         [Test]
+        [Category("UI_DEMOQA")]
         public void VerifyDocumentsCheckBoxChecked()
         {
             Go.To<DemoQACheckBoxPage>().
@@ -28,6 +30,7 @@ namespace AtataUITests.Tests
         }
 
         [Test, Description("Expand Home > Check Descktop Checkbox, verify checked")]
+        [Ignore("Intercepted with pop-up ads")]
         public void VerifyDesktopCheckBoxChecked()
         {
             Go.To<DemoQACheckBoxPage>().
@@ -38,6 +41,7 @@ namespace AtataUITests.Tests
         }
 
         [Test, Description("Expand Home > Documents, Check Documents Checkbox. Verify WorkSpace checked")]
+        [Ignore("Intercepted with pop-up ads")]
         public void VerifyWorkSpaceCheckBoxChecked()
         {
             Go.To<DemoQACheckBoxPage>().
@@ -49,6 +53,7 @@ namespace AtataUITests.Tests
         }
 
         [Test, Description("Expand Home > Check Documents. Verify text 'You have selected : documents workspace react angular veu office public private classified general'")]
+        [Ignore("Intercepted with pop-up ads")]
         public void VerifyDisplayResultTextAfterDocumentsCheckBoxChecked() 
         {
             Go.To<DemoQACheckBoxPage>().
@@ -60,6 +65,7 @@ namespace AtataUITests.Tests
 
 
         [Test, Description("Expand Home > Documents > WorkSpace, verify React have rct-icon-leaf-close icon")]
+        [Ignore("Intercepted with pop-up ads")]
         public void VerifyReactHaveIconRctIconLeafClose()
         {
             Go.To<DemoQACheckBoxPage>().
@@ -71,6 +77,7 @@ namespace AtataUITests.Tests
         }
 
         [Test, Description("Expand Home > Check Home, Expand Home, verify Desktop, Documents, Downloads checkboxex checked")]
+        [Category("UI_DEMOQA")]
         public void VerifyCheckBoxesCheckedAfterCheckHome()
         {
             Go.To<DemoQACheckBoxPage>().

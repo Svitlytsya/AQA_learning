@@ -7,6 +7,7 @@ namespace AtataUITests.Tests
     public sealed class ButtonsTests : UITestFixture
     {
         [Test, Description("Verify Click Me button"), Retry(2)]
+        [Ignore("Intercepted with pop-up ads")]
         public void ClickButtonTest() =>
             // Given I go to DemoQa Elements page 
             Go.To<DemoQAElementsPage>().
@@ -22,6 +23,7 @@ namespace AtataUITests.Tests
             DoubleClickMessage.Should.Not.BeVisible();
 
         [Test, Description("Verify Double Click Me button"), Retry(2)]
+        [Ignore("Intercepted with pop-up ads")]
         public void DoubleClickButtonTest() =>
             // Given I go to DemoQa Elements page 
             Go.To<DemoQAElementsPage>().
@@ -37,6 +39,7 @@ namespace AtataUITests.Tests
             DinamicClickMessage.Should.Not.BeVisible();
 
         [Test, Description("Verify Rigth Click Me button"), Retry(2)]
+        [Ignore("Intercepted with pop-up ads")]
         public void RigthClickButtonTest() =>
             // Given I go to DemoQa Elements page 
             Go.To<DemoQAElementsPage>().
@@ -59,6 +62,7 @@ namespace AtataUITests.Tests
         //TC-7 : Verify text You have done a dynamic click is not visible after page refresh
 
         [Test, Description("Verify Click Me button should be enabled"), Retry(2)]
+        [Category("UI_DEMOQA")]
         public void ClickMeButtonEnabledTest() =>
 
             Go.To<DemoQAElementsPage>().
@@ -67,7 +71,8 @@ namespace AtataUITests.Tests
                     ClickMe.Should.BeEnabled();
 
         [Test, Description("Verify Click Rigth Click Me button verify button focused")]
-         public void VerifyClickRightClickMebuttonfocused() =>
+        [Ignore("Intercepted with pop-up ads")]
+        public void VerifyClickRightClickMebuttonfocused() =>
            
             Go.To<DemoQAElementsPage>().
             Buttons.ClickAndGo().
@@ -76,6 +81,7 @@ namespace AtataUITests.Tests
                     RigthClickMe.Should.BeFocused();
 
         [Test, Description("Verify text You have done a dynamic click is not visible after page refresh")]
+        [Ignore("Intercepted with pop-up ads")]
         public void VerifyTextNotVisibleafterPageRefresh() =>
            
             Go.To<DemoQAElementsPage>().
@@ -88,6 +94,7 @@ namespace AtataUITests.Tests
 
 
         [Test, Description("Verify H1 Buttons is visible")]
+        [Category("UI_DEMOQA")]
         public void VerifyH1TitleTextButtonsVisible() =>
             Go.To<DemoQAElementsPage>().
             Buttons.ClickAndGo().

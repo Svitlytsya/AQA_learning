@@ -35,6 +35,7 @@ namespace AtataUITests.Tests
 
         [Test]
         [Description("Clear Text Full Name Input, press submit, text Name should not be visible")]
+        [Category("UI_DEMOQA")]
         public void VerifyTextClearFullName()
         {
             Go.To<DemoQAElementsPage>().
@@ -50,6 +51,7 @@ namespace AtataUITests.Tests
         //Test Case 1: Mark "Full Name" should be visible
         [Test]
         [Description("Mark \"Full Name\" should be visible")]
+        [Category("UI_DEMOQA")]
         public void VerifyTextFullNameLable() 
         { 
             Go.To<DemoQAElementsPage>().
@@ -61,6 +63,7 @@ namespace AtataUITests.Tests
 
         [Test]
         [Description("Full Name Input should be visible and input \" Dog Pulya\" can be done")]
+        [Category("UI_DEMOQA")]
         public void VerifyTextInputFullName()
         {
             Go.To<DemoQAElementsPage>().
@@ -72,6 +75,7 @@ namespace AtataUITests.Tests
 
         [Test]
         [Description("The input should be  visible as \"Full Name:Dog Pulya\"  in aftersubmit text area")]
+        [Category("UI_DEMOQA")]
         public void VerifyTexFullNameSet()
         {
             Go.To<DemoQAElementsPage>().
@@ -86,6 +90,7 @@ namespace AtataUITests.Tests
        
         [Test]
         [Description("Enter invalid imput, frame of the field \"Full Name\" is highlighted in red")]
+        [Category("UI_DEMOQA")]
         public void VerifyInvalidFullNameSet()
         {
             Go.To<DemoQAElementsPage>().
@@ -107,6 +112,7 @@ namespace AtataUITests.Tests
 
         [Test]
         [Description("Checking that empty field \"Full Name\" can`t be submmited and after pressing submit an appropriate alert appears")]
+        [Category("UI_DEMOQA")]
         public void VerifyEmptyFullNameInput()
         {
             //string expectedAlertText = "The field Full Name must be fill in";
@@ -129,6 +135,7 @@ namespace AtataUITests.Tests
 
         [Test]
         [Description("The input should be  visible as \"Email:pulyadog@gmail.com\"  in aftersubmit text area")]
+        [Category("UI_DEMOQA")]
         public void VerifyEmailInputSet()
         {
             Go.To<DemoQAElementsPage>().
@@ -144,6 +151,7 @@ namespace AtataUITests.Tests
 
         [Test]
         [Description("Enter invalid imput, frame of the field \"Email\" is highlighted in red")]
+        [Category("UI_DEMOQA")]
         public void VerifyInvalidEmailInputSet()
         {
             Go.To<DemoQAElementsPage>().
@@ -181,6 +189,7 @@ namespace AtataUITests.Tests
 
         [Test]
         [Description("Enter invalid imput, frame of the field \"Current Address\" is highlighted in red")]
+        [Category("UI_DEMOQA")]
         public void VerifyInvalidCurrentAddressInputSet()
         {
             Go.To<DemoQAElementsPage>().
@@ -204,6 +213,7 @@ namespace AtataUITests.Tests
 
         [Test]
         [Description("Enter character \"!\" in Full Name Input leaving other fields of the TextBox Form empty and after pressing submit an appropriate alert appears")]
+        [Category("UI_DEMOQA")]
         public void VerifyEmptyFieldsOfTextBoxForm()
         {
             //string expectedAlertTextBoxForm = "The fields of the TextBox Form must be fill in";

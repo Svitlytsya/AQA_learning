@@ -5,6 +5,7 @@ namespace AtataUITests.Tests
     internal class RadioButtonTests : UITestFixture
     {
         [Test]
+        [Ignore("Intercepted with pop-up ads")]
         public void VerifyYesRadioButtonVisible()
         {
             Go.To<DemoQARadioButtonPage>().
@@ -18,6 +19,7 @@ namespace AtataUITests.Tests
         //TC-2 : Verify Impressive radio Button can be checked and display text 'You have selected Impressive'
        
         [Test, Description("verify impressive radio button can be checked and display text 'you have selected impressive'")]
+        [Ignore("Intercepted with pop-up ads")]
         public void VerifyImpressiveRadioButton()
         {
             Go.To<DemoQARadioButtonPage>().
@@ -29,6 +31,7 @@ namespace AtataUITests.Tests
         //TC-3 : Verify No radio Button disabled and not show text 'You have selected'
 
         [Test, Description("No radio Button disabled and not show text 'You have selected'")]
+        [Ignore("Intercepted with pop-up ads")]
         public void NoRadioButtonDisabled() 
         {
             Go.To<DemoQARadioButtonPage>().
@@ -41,6 +44,7 @@ namespace AtataUITests.Tests
         //TC-4 : Verify H1 Radio Button is visible
 
         [Test, Description("Verify H1 Radio Button is visible")]
+        [Category("UI_DEMOQA")]
         public void VerifyH1TitleTextRadioButtonVisible() 
         {
             Go.To<DemoQARadioButtonPage>().
@@ -50,6 +54,7 @@ namespace AtataUITests.Tests
         //TC-5 : Verify text 'You have selected Impressive' is not visible after page refresh
 
         [Test, Description("Verify text 'You have selected Impressive' is not visible after page refresh")]
+        [Ignore("Intercepted with pop-up ads")]
         public void VerifyTextImpressiveRadioNotVisibleafterPageRefresh() 
         {
             Go.To<DemoQARadioButtonPage>().
