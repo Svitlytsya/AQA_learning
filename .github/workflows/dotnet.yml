@@ -27,7 +27,6 @@ jobs:
 
     - name: Build
       run: dotnet build --no-restore
-      working-directory: AtataUITests
 
     - name: Test
       run: dotnet test AtataUITests.csproj --filter "Category=UI_DEMOQA"
